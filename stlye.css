@@ -1,0 +1,292 @@
+
+.slider {
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(100% * 8); /* 4 images * 2 (for continuous loop effect) */
+    animation: scroll 16s linear infinite;
+}
+
+.slide {
+    width: 12.5%; /* 100% / 8 slides */
+    flex: 0 0 auto;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.Sermain{
+    display: inline-block;
+    width: 670px;
+    height: 400px;
+    background-color: lightblue;
+
+}
+
+
+
+
+
+
+/* From Uiverse.io by doniaskima */ 
+.btn-12,
+.btn-12 *,
+.btn-12 :after,
+.btn-12 :before,
+.btn-12:after,
+.btn-12:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-12 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.btn-12:disabled {
+  cursor: default;
+}
+
+.btn-12:-moz-focusring {
+  outline: auto;
+}
+
+.btn-12 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-12 [hidden] {
+  display: none;
+}
+
+.btn-12 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+
+.btn-12 span {
+  mix-blend-mode: difference;
+}
+
+.btn-12:after,
+.btn-12:before {
+  background: linear-gradient(
+    90deg,
+    #fff 25%,
+    transparent 0,
+    transparent 50%,
+    #fff 0,
+    #fff 75%,
+    transparent 0
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateY(var(--progress, 100%));
+  transition: transform 0.2s ease;
+}
+
+.btn-12:after {
+  --progress: -100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 25%,
+    #fff 0,
+    #fff 50%,
+    transparent 0,
+    transparent 75%,
+    #fff 0
+  );
+  z-index: -1;
+}
+
+.btn-12:hover:after,
+.btn-12:hover:before {
+  --progress: 0;
+}
+
+
+.serheading{
+    font-family: "Poppins", Sans-serif;
+    font-size: 35px;
+  
+
+
+}
+.serpar{
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+
+}
+
+.sercard{
+    display: inline-block;
+}
+
+
+
+.offer-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.text-content {
+    max-width: 50%;
+}
+.text-content .section-title {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6c63ff;
+}
+.text-content h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.text-content p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+}
+.service-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 45%;
+}
+.service-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+.service-card img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+.service-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.service-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.navigation-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.nav-arrow {
+    background: #2e3556;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.nav-arrow:hover {
+    background: #1d2236;
+}
+
+
+/* why choos uss */
+.choosbody {
+    background: linear-gradient(135deg, #a626d3, #f08ff7), url('images/f.png');
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.icon-container i {
+    font-size: 36px;
+    color: #fff;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.icons {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.icons .icon-item {
+    text-align: center;
+}
+
+.icons h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.content {
+    flex: 2;
+    margin-left: 50px;
+}
+
+.content h2 {
+    font-weight: bold;
+}
